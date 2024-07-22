@@ -4,7 +4,7 @@ import _ from "lodash";
 let count = 0;
 function updateCounter() {
   count++;
-  $("#count").text(`${count} clicks on the button`);
+  $("P#count").text(`${count} clicks on the button`);
 }
 
 let debounceUpdateCounter = _.debounce(updateCounter, 500, { leading: true });
@@ -24,7 +24,7 @@ $(function() {
 
   $("body").append("<button>" + textsArr[2] + "</button>");
 
-  $("body").append("<p id='count'> " + textsArr[3] + "</p>");
+  $("body").append(textsArr[3]);
   $("body").append("<p>" + textsArr[4] + "</p>");
 
   $("button").on("click", debounceUpdateCounter);

@@ -22,6 +22,11 @@
   padding: 40px;
 }
 
+form {
+  display: flex;
+  gap: 10px;
+}
+
 .App-link {
   color: #61dafb;
 }

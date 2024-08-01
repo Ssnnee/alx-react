@@ -8,7 +8,6 @@ export const Notifications = () => {
     <div className="Notification">
       <button
         style={{ display: 'inline', position: 'absolute', right: '20px' }}
-        aria-label='Close'
         onClick={() => console.log('Close button has been clicked')}
       >
         <img src={closeIcon} alt='close' style={{ width: '10px', height: '10px' }} />

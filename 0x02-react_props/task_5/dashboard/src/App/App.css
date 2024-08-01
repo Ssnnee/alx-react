@@ -1,6 +1,6 @@
 .App {
   font-size: 1.4rem;
-  font-family: inter, sans-serif;
+  font-family: Arial, Helvetica, inter, sans-serif;
 }
 
 /* .App-logo { */
@@ -8,17 +8,6 @@
 /*   pointer-events: none; */
 /* } */
 
-.App-header {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  color: #e11d3f;
-}
-
-.App-header img {
-  width: 300px;
-  height: 300px;
-}
 
 .App-body {
   min-height: 40vh;
@@ -27,15 +16,7 @@
   padding: 40px;
 }
 
-form {
-  display: flex;
-  gap: 10px;
-}
 
 .App-link {
   color: #61dafb;
-}
-
-.App-footer {
-  text-align: center;
 }

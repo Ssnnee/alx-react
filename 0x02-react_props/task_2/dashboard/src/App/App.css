@@ -1,0 +1,22 @@
+.App {
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, inter, sans-serif;
+}
+
+/* .App-logo { */
+/*   height: 40vmin; */
+/*   pointer-events: none; */
+/* } */
+
+
+.App-body {
+  min-height: 40vh;
+  border-top: 3px solid #e11d3f;
+  border-bottom: 3px solid #e11d3f;
+  padding: 40px;
+}
+
+
+.App-link {
+  color: #61dafb;
+}

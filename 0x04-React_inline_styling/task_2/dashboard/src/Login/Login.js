@@ -1,10 +1,10 @@
 import React from "react";
-import { StyleSheet, css } from "aphrodite";
+import { StyleSheet, css } from 'aphrodite';
 
 function Login() {
   return (
-    <React.Fragment>
-      <div className={css(styles["App-body"])}>
+    <>
+      <div className={css(styles.AppBody)}>
         <p>Login to access the full dashboard</p>
         <form>
           <label htmlFor="email">Email:</label>
@@ -14,12 +14,12 @@ function Login() {
           <button>OK</button>
         </form>
       </div>
-    </React.Fragment>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
-  "App-body": {
+  AppBody: {
     fontSize: "1rem",
     padding: "2em",
     height: "45%",
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
 
   input: {
     margin: "10px",
-  },
+  }
 });
 
 export default Login;

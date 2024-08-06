@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { StyleSheet, css } from "aphrodite";
+import "./Notifications.css";
 import closeIcon from "../assets/close-icon.png";
 import NotificationItem from "./NotificationItem";
 import PropTypes from "prop-types";
 import NotificationItemShape from "./NotificationItemShape";
+import { StyleSheet, css } from 'aphrodite';
 
 class Notifications extends Component {
   constructor(props) {
@@ -22,8 +23,8 @@ class Notifications extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        <div className={css(styles.menuItem)}>
+      <>
+        <div className="menuItem">
           <p>Your notifications</p>
         </div>
         {this.props.displayDrawer ? (
@@ -57,40 +58,10 @@ class Notifications extends Component {
             </ul>
           </div>
         ) : null}
-      </React.Fragment>
+      </>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  Notifications: {
-    padding: "1em",
-    border: "2px dashed red",
-    position: "absolute",
-    top: "1.8em",
-    right: "0",
-
-    "@media (max-width: 375px)": {
-      display: "block",
-      height: "100vh",
-      width: "100vw",
-      marginLeft: "auto",
-      marginRight: "auto",
-      border: "none",
-      fontSize: "20px",
-      padding: "0",
-    },
-  },
-
-  "notification-header": {
-    display: "flex",
-    justifyContent: "space-between",
-  },
-
-  menuItem: {
-    textAlign: "right",
-  },
-});
 
 Notifications.propTypes = {
   displayDrawer: PropTypes.bool,
@@ -101,5 +72,15 @@ Notifications.defaultProps = {
   displayDrawer: false,
   listNotifications: [],
 };
+
+const styles = StyleSheet.create({
+  Notifications: {
+    padding: "1em",
+    border: "2px dashed red",
+    position: "absolute",
+    top: "1.8em",
+    right: "0",
+  }
+});
 
 export default Notifications;

@@ -1,0 +1,15 @@
+.Notification {
+  border: 2px dashed #e11d3f;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+li[data-notification-type='default'] {
+  color: blue;
+}
+
+li[data-urgent],
+li[data-notification-type='urgent'] {
+  color: red;
+}
+

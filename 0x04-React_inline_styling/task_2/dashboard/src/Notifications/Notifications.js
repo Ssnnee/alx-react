@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Notifications.css";
 import closeIcon from "../assets/close-icon.png";
 import NotificationItem from "./NotificationItem";
 import PropTypes from "prop-types";
@@ -24,7 +23,7 @@ class Notifications extends Component {
   render() {
     return (
       <>
-        <div className="menuItem">
+        <div className={css(styles.menuItem)}>
           <p>Your notifications</p>
         </div>
         {this.props.displayDrawer ? (
@@ -80,7 +79,12 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: "1.8em",
     right: "0",
-  }
+  },
+
+  menuItem: {
+    textAlign: "right",
+  },
+
 });
 
 export default Notifications;

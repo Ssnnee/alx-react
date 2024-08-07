@@ -72,6 +72,18 @@ Notifications.defaultProps = {
   listNotifications: [],
 };
 
+const opacity = {
+  "0%": { opacity: 0.5 },
+  "100%": { opacity: 1 },
+};
+
+const bounce = {
+  "0%": { transform: "translateY(0px)" },
+  "33%": { transform: "translateY(-5px)" },
+  "66%": { transform: "translateY(5px)" },
+  "100%": { transform: "translateY(0px)" },
+};
+
 const styles = StyleSheet.create({
   Notifications: {
     padding: "1em",
@@ -86,6 +98,14 @@ const styles = StyleSheet.create({
 
   menuItem: {
     textAlign: "right",
+    zIndex: 100,
+    ":hover": {
+      animationName: [opacity, bounce],
+      animationDuration: "1s, 0.5s",
+      animationIterationCount: "3",
+      cursor: "pointer",
+      backgroundColor: "#fff8f8",
+    },
   },
 
 });

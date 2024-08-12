@@ -15,7 +15,8 @@ class Header extends React.Component {
         </div>
         { context.user.isLoggedIn &&
           ( <section id='isLoggedIn'>
-              <p>Welcome {context.user.email} <span onClick={context.logOut}> (logout)</span></p>
+              <p>Welcome {context.user.email}
+              <span className={css(styles.span)} onClick={context.logOut}> (logout)</span></p>
             </section>
           )
         }
@@ -36,12 +37,20 @@ const styles = StyleSheet.create({
       justifyContent: 'center'
     }
   },
+
   title: {
     color: 'red'
   },
+
   logo: {
     height: '100px',
     width: '100px'
+  },
+
+  span: {
+    color: 'blue',
+    textDecoration: 'underline',
+    cursor: 'pointer'
   }
 })
 

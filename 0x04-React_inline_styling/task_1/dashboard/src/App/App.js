@@ -47,7 +47,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <div className={css(styles.App)}>
+        <div className={css(styles.body)}>
           <div className="heading-section">
             <Notifications listNotifications={this.listNotifications} />
             <Header />
@@ -75,11 +75,18 @@ class App extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  App: {
+  body: {
     height: "100vh",
     maxWidth: "100vw",
     position: "relative",
     fontFamily: "Arial, Helvetica, sans-serif",
+    "footer": {
+      fontSize: "1rem",
+      padding: "1.2rem",
+      textAlign: "center",
+      fontStyle: "italic",
+      borderTop: "3px solid #e0354b",
+    },
   }
 
 });

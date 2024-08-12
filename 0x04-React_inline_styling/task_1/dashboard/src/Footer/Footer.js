@@ -5,9 +5,9 @@ import { getFullYear, getFooterCopy } from "../utils/utils";
 function Footer() {
   return (
     <>
-      <div className="App-footer">
+      <footer className="App-footer">
         Copyright {getFullYear()} - {getFooterCopy()}
-      </div>
+      </footer>
     </>
   );
 }
